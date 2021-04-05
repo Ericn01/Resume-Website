@@ -163,7 +163,14 @@ button:hover{
         width: 80%;
         margin: auto;
     }
-   
+    .container .hobbies{
+        display: block;
+    }
+    .hobbies-img{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
     .videos{
         margin-right: 50px;
         
