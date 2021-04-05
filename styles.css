@@ -113,6 +113,9 @@ button:hover{
 }
 /* Breakpoint for smaller screens - only good for 100px */
 @media all and (max-width: 1000px) and (min-width:820px) {
+    .container{
+        width: 100%;
+    }
     header{
         height: 200px;
     }
@@ -157,6 +160,15 @@ button:hover{
 /* Tablet design */
 @media all and (max-width: 820px) { 
     .container{
+        width: 100%;
+    }
+    video {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%    !important;
+        height: auto   !important;
+      }
+    .container{
         display:block;
     }
     .top-info a{
@@ -170,11 +182,7 @@ button:hover{
         margin-top: 30px;
         margin-bottom: 50px;
     }
-
-    .videos{
-        margin-right: 50px;
-        
-    }
+    
     .logo-container{
         width: 100%;
         position: absolute;
@@ -231,7 +239,7 @@ button:hover{
         font-size: 0.85em;
         margin: auto;
     }
-
+    
     .top-info h1{
         font-size: 3em;
     }
@@ -256,7 +264,6 @@ button:hover{
     textarea{
         float: left;
     }
-
     video{
         margin-top: 30px;
     }
@@ -489,6 +496,7 @@ main{
 
 video{
     width: 400px;
+    min-width: 200px;
 }
 video:first-child{
     margin-right: 20px;
@@ -562,6 +570,7 @@ footer p{
         font-size: 0.70em;
         margin-left: 10px;
     }
+  
     .contact-info p{
         margin-top: 20px;
     }
