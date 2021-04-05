@@ -1,3 +1,4 @@
+
 /*Import header font */
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
@@ -18,7 +19,9 @@
     --sub-header-font-family: 'Playfair Display', serif;
     --main-header-font-family: 'Dela Gothic One', cursive;
 }
-
+html, body {
+    overflow-x:hidden 
+  } 
 /* Header formatting & styling */
 header li{
     font-size: 1.2em;
@@ -159,7 +162,9 @@ button:hover{
 }
 /* Tablet design */
 @media all and (max-width: 820px) { 
+    body{overflow-x: hidden;}
     .container{
+        margin: auto;
         width: 100%;
     }
     video {
@@ -503,6 +508,7 @@ video:first-child{
 }
 
 .videos{
+    width: 100%;
     text-align: center;
     margin-top: 40px;
 }
@@ -564,7 +570,6 @@ footer p{
 
 /* Really small screens */
 @media all and (max-width: 480px){
-  
     .contact-info{
         display: inline-block;
         font-size: 0.70em;
