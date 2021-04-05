@@ -65,20 +65,26 @@ article h2:nth-of-type(even){
 
 button{
     color: var(--link-color);
-    width: 35%;
+    width: 45%;
     padding: 10px 25px;
+    
     background-color: rgba(0, 136, 169, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.6s ease 0s;
-    margin-left: 30px;
 }
 
 button:hover{
     background-color: rgba(6, 113, 139, 0.8);
 }
 
+.buttons{
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
 .container{
     display: grid;
     gap: 0.5em;
@@ -96,10 +102,9 @@ button:hover{
         display:block;
         margin-bottom: 10px;
     }
-    textarea{
-        margin-left: 160px;
-        width: 60%;
-        height: 250px;
+    
+    video{
+        margin-top: 30px;
     }
 }
 /* Breakpoint for smaller screens - only good for 100px */
@@ -118,11 +123,17 @@ button:hover{
         width: 10px;
         height: 10px;
     }
-
+    .top-info a{
+        float: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
     nav ul{
         position: absolute;
         top: 30px;
-        right: 90px;
+        right: 8%;
     }
     nav li{
         padding-right: 0;
@@ -135,6 +146,10 @@ button:hover{
 @media all and (max-width: 800px) { 
     .container{
         display:block;
+    }
+    .top-info a{
+        width: 60%;
+        margin: auto;
     }
     .logo-container{
         width: 100%;
@@ -184,6 +199,55 @@ button:hover{
     }
 }
 
+@media all and (max-width: 600px){
+    .form{
+        width: 100%;
+    }
+   
+    .test2, .test3{
+        display: none;
+    }
+    nav li{
+        font-size: 0.85em;
+        margin: auto;
+    }
+    
+    .top-info h1{
+        font-size: 3em;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .top-info{
+        position: absolute;
+        top: 50px;
+    }
+    .logo-container .test1 .front-img{
+        position: absolute;
+        width: 135px;
+    }
+    .logo-container .test1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 30px;
+        left: 30px;
+    }
+    .buttons{
+        width: 100%;
+        display: inline-block;
+    }
+    button{
+        text-align: center;
+    }
+    textarea{
+        float: left;
+    }
+
+    video{
+        margin-top: 30px;
+    }
+}
 
 hr{
     margin-left: 0;
@@ -195,18 +259,18 @@ hr{
 }
 
 a{
+    color: var(--link-color);
     text-decoration: none;
     cursor: pointer;
 }
 a:visited{
     color: var(--link-color);
 }
-
 nav{
     order: 3;
 }
 body{
-   
+   overflow-x: hidden;
    /*Header is 100px large,  */
    grid-template-rows: 200px auto 30%;
    background-color: var(--main-bg-color);
@@ -282,14 +346,13 @@ h3{
 article{
     margin-top: 10px;
 }
-
+/*Contact form CSS*/ 
 form{
     order: 8;
     background-color: var(--body-color-2);
     margin: auto;
     width: 50%;
     border-radius: 5px;
-    
     padding: 30px;
     grid-column: span 3;
     color: var(--main-bg-color);
@@ -298,7 +361,7 @@ input, select, textarea{
     font-family: var(--regular-text-font-family);
     width: 60%;
     margin: auto;
-    margin-left: 100px;
+    
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -306,11 +369,15 @@ input, select, textarea{
     margin: 20px 0 20px 0;
 }
 textarea{
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
     width: 60%;
-    height: 250px;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display:inline-block;
 }
 .f-one{
     margin-right: 100px;
