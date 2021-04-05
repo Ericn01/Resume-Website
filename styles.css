@@ -92,25 +92,29 @@ button:hover{
     grid-template-rows: repeat(1fr, 3fr);
     grid-template-areas: " . content . ";
 }
+.contact-info{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
 .container article{
     padding: 25px;
     align-items: center;
 }
 /* Largest breakpoint - works well */
-@media all and (max-width:1640px) and (min-width:900px){
+@media all and (max-width:1640px) and (min-width:1000px){
     nav li{
         display:block;
         margin-bottom: 10px;
     }
-    
     video{
         margin-top: 30px;
     }
 }
 /* Breakpoint for smaller screens - only good for 100px */
-@media all and (max-width: 900px) and (min-width:800px) {
+@media all and (max-width: 1000px) and (min-width:820px) {
     header{
-        height: 150px;
+        height: 200px;
     }
     .top-info{
         margin-top: 20px;
@@ -123,17 +127,17 @@ button:hover{
         width: 10px;
         height: 10px;
     }
-    .top-info a{
-        float: none;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .contact-info img{
+        width: 20px;
     }
-    
+    .contact-info{
+        font-size: 0.85em;
+    }
     nav ul{
         position: absolute;
+        width: 100%;
         top: 30px;
-        right: 8%;
+        left: 25%;
     }
     nav li{
         padding-right: 0;
@@ -142,20 +146,25 @@ button:hover{
         margin-right: 10px;
     }
 }
-/* Mobile design */
-@media all and (max-width: 800px) { 
+/* Tablet design */
+@media all and (max-width: 820px) { 
     .container{
         display:block;
     }
     .top-info a{
-        width: 60%;
+        width: 80%;
         margin: auto;
+    }
+    .hobbies{
+        display: block;
+    }
+    .videos video{
+        width: 100%;
     }
     .logo-container{
         width: 100%;
-        margin: auto;
         position: absolute;
-        left: 150px;
+        left: 28%;
         top: 175px;
     }
     header{
@@ -169,10 +178,7 @@ button:hover{
         width: 100%;
         text-align: center;
     }
-    .top-info p{
-        width: 100%;
-        font-size: 0.85em;
-    }
+
     header nav{
         position: absolute;
         right: 10px;
@@ -203,7 +209,13 @@ button:hover{
     .form{
         width: 100%;
     }
-   
+    .contact-info{
+        font-size: 0.8em;
+    }
+    
+    .contact-info img{
+        width: 20px;
+    }
     .test2, .test3{
         display: none;
     }
@@ -214,9 +226,6 @@ button:hover{
     
     .top-info h1{
         font-size: 3em;
-        text-align: center;
-        width: 100%;
-        margin: auto;
     }
     .top-info{
         position: absolute;
@@ -224,14 +233,10 @@ button:hover{
     }
     .logo-container .test1 .front-img{
         position: absolute;
-        width: 135px;
+        width: 130px;
     }
-    .logo-container .test1{
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 30px;
-        left: 30px;
+    .logo-container{
+        left: 25%;
     }
     .buttons{
         width: 100%;
@@ -248,7 +253,69 @@ button:hover{
         margin-top: 30px;
     }
 }
+/* Really small screens */
+@media all and (max-width: 480px){
+  
+    .contact-info{
+        display: inline-block;
+        font-size: 0.70em;
+        margin-left: 10px;
+    }
+    .contact-info p{
+        margin-top: 20px;
+    }
+    nav li{
+        font-size: 0.80em;
+        margin: auto;
+    }
+    .top-info h1{
+        font-size: 2.5em;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .top-info{
+        position: absolute;
+        top: 80px;
+    }
+    .logo-container .test1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+   
+    .logo-container{
+        left: 15%;
+    }
+    form{
+        
+        text-align: center;
+    }
+    form div{
+        display: inline-block;
+    }
+    form input, form textarea{
+        width: 100%;
+    }
+    form hr{
+        width: 100%;
 
+    }
+    .buttons{
+        width: 100%;
+        display: inline-block;
+    }
+    button{
+        text-align: center;
+    }
+    textarea{
+        float: left;
+    }
+
+    video{
+        margin-top: 30px;
+    }
+}
 hr{
     margin-left: 0;
     border: 0;
@@ -266,6 +333,7 @@ a{
 a:visited{
     color: var(--link-color);
 }
+
 nav{
     order: 3;
 }
