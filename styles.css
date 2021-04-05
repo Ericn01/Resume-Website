@@ -188,6 +188,12 @@ h3{
 .hobbies p, .education p{
     line-height: 150%;
 }
+.hobbies .hobbies-img{
+    text-align: center;
+}
+.hobbies div{
+    margin-right: 20px;
+}
 .education{
     order: 4;
 }
@@ -335,6 +341,7 @@ video:first-child{
     color: red;
 }
 
+
 footer{
     color: var(--link-color);
     text-align: center;
@@ -368,11 +375,15 @@ footer p{
 }
 
 .lang-images{
-    width: 100%;
-    margin: auto;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;    
 }
 .lang-images img{
+    
     width: 150px;
+    height: 100px;
     padding: 10px;
-    border: 2px solid black;
+    margin: 30px;
 }
