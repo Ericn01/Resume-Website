@@ -1,0 +1,82 @@
+/*Import header font */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); 
+/* Define variables for the root (full scope) element */
+
+:root{
+    --main-bg-color: #0b0c10;
+    --main-txt-color: #c5c6c7;
+    --header-bg-color: #1f2833;
+    --header-txt-color: #66fcf1;
+    --main-width: 95%;
+    --main-header-font-family: 'Dela Gothic One', cursive;
+}
+main li{
+ margin-bottom: 20px;
+ list-style-type:initial;
+}
+.container{
+    border: 1px solid black;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 5fr 2fr;
+    grid-template-areas: " . content . ";
+}
+.container article{
+    padding: 25px;
+    border:1px solid red;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: darkblue;
+    cursor: pointer;
+}
+
+body{
+   background-color: var(--main-bg-color);
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    color: var(--header-txt-color);
+}
+
+h1{
+    order: 2;
+    font-family: var(--main-header-font-family);
+    font-size: 5em;
+}
+
+h2{
+    color: #45a29e;
+    font-size: 2em;
+    margin: 8px 0px 10px 0px;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+article{
+    border-bottom: 3px dotted black;
+    margin-top: 10px;
+}
+
+main{
+    grid-area: content;
+    margin: auto;
+    padding: 10px;
+    color: var(--main-txt-color);
+    width: var(--main-width);
+}
+
+.summary-txt{
+    font-size: 1.5em;
+    line-height: 150%;
+}
