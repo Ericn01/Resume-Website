@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
 /* Define variables for the root (full scope) element */
-
 :root{
     --body-color-1: #00203fff; /*alternative 1: #00203fff  alternative 2: #0b1c51*/
     --body-color-2: #adefd1ff; /*alternative: #adefd1ff */
@@ -20,6 +19,7 @@
     --main-header-font-family: 'Dela Gothic One', cursive;
 }
 
+/* Header formatting & styling */
 header li{
     font-size: 1.2em;
     display: inline-block;
@@ -47,7 +47,6 @@ main li{
     list-style-type:initial;
 }
 
-
 article:nth-of-type(odd){
     background-color: var(--body-color-1);
     color:var(--body-color-2);
@@ -60,6 +59,7 @@ article h2:nth-of-type(even){
     color: black;
 }
 .skills{
+    order: 3;
     grid-column: span 2;
 }
 
@@ -165,7 +165,7 @@ h1{
 }
 .courses{
     display: inline-block;
-    
+    order: 6;
 }
 h2{
     font-family: var(--sub-header-font-family);
@@ -188,7 +188,9 @@ h3{
 .hobbies p, .education p{
     line-height: 150%;
 }
-
+.education{
+    order: 4;
+}
 .hobbies a{
     color: var(--education-header-color);
 }
@@ -197,7 +199,7 @@ article{
 }
 
 form{
-
+    order: 8;
     background-color: var(--body-color-2);
     margin: auto;
     width: 50%;
@@ -250,7 +252,9 @@ main{
     font-size: 1.5em;
     line-height: 150%;
 }
+.summary{order: 1;}
 .work-experience{
+    order: 2;
     grid-column: span 2;
 }
 
@@ -279,6 +283,9 @@ main{
 }
 .lang-txt{
     font-size: 1.2em;
+}
+.languages{
+    order: 7;
 }
 
 .test2{
@@ -317,7 +324,7 @@ video:first-child{
 
 .videos{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .work-experience h2, .skills h2, .courses h2{
@@ -332,16 +339,17 @@ footer{
     color: var(--link-color);
     text-align: center;
     vertical-align: middle;
-    height: 35px;
-    background: linear-gradient(to right, var(--body-color-1), var(--body-color-2));
-    margin: auto;
+    
+    background-color: var(--body-color-1)
 }
 footer p{
     margin-top: 20px;
     
 }
 .hobbies{
+    order: 5;
     column-gap: 20px;
+    
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 0.1fr repeat(3, 1fr);
