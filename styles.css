@@ -127,6 +127,14 @@ button:hover{
         width: 10px;
         height: 10px;
     }
+    .container .hobbies{
+        display: block;
+    }
+    .hobbies-img{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
     .contact-info img{
         width: 20px;
     }
@@ -155,11 +163,10 @@ button:hover{
         width: 80%;
         margin: auto;
     }
-    .hobbies{
-        display: block;
-    }
-    .videos video{
-        width: 100%;
+   
+    .videos{
+        margin-right: 50px;
+        
     }
     .logo-container{
         width: 100%;
@@ -192,13 +199,7 @@ button:hover{
         font-size: 0.85em;
     }
     
-    .hobbies{
-        display: block;
-    }
-    .hobbies img{
-        float: left;
-        width: 100%;
-    }
+
     .hobbies img:hover{
         transition: 2s ease;
         transform: scale(1.25);
@@ -223,7 +224,7 @@ button:hover{
         font-size: 0.85em;
         margin: auto;
     }
-    
+
     .top-info h1{
         font-size: 3em;
     }
@@ -253,69 +254,7 @@ button:hover{
         margin-top: 30px;
     }
 }
-/* Really small screens */
-@media all and (max-width: 480px){
-  
-    .contact-info{
-        display: inline-block;
-        font-size: 0.70em;
-        margin-left: 10px;
-    }
-    .contact-info p{
-        margin-top: 20px;
-    }
-    nav li{
-        font-size: 0.80em;
-        margin: auto;
-    }
-    .top-info h1{
-        font-size: 2.5em;
-        text-align: center;
-        width: 100%;
-        margin: auto;
-    }
-    .top-info{
-        position: absolute;
-        top: 80px;
-    }
-    .logo-container .test1{
-        position: absolute;
-        width: 100px;
-        height: 100px;
-    }
-   
-    .logo-container{
-        left: 15%;
-    }
-    form{
-        
-        text-align: center;
-    }
-    form div{
-        display: inline-block;
-    }
-    form input, form textarea{
-        width: 100%;
-    }
-    form hr{
-        width: 100%;
 
-    }
-    .buttons{
-        width: 100%;
-        display: inline-block;
-    }
-    button{
-        text-align: center;
-    }
-    textarea{
-        float: left;
-    }
-
-    video{
-        margin-top: 30px;
-    }
-}
 hr{
     margin-left: 0;
     border: 0;
@@ -606,4 +545,68 @@ footer p{
     height: 100px;
     padding: 10px;
     margin: 30px;
+}
+
+/* Really small screens */
+@media all and (max-width: 480px){
+  
+    .contact-info{
+        display: inline-block;
+        font-size: 0.70em;
+        margin-left: 10px;
+    }
+    .contact-info p{
+        margin-top: 20px;
+    }
+    nav li{
+        font-size: 0.80em;
+        margin: auto;
+    }
+    .top-info h1{
+        font-size: 2.5em;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .top-info{
+        position: absolute;
+        top: 80px;
+    }
+    .logo-container .test1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+   
+    .logo-container{
+        left: 15%;
+    }
+    form{
+        
+        text-align: center;
+    }
+    form div{
+        display: inline-block;
+    }
+    form input, form textarea{
+        width: 100%;
+    }
+    form hr{
+        width: 100%;
+
+    }
+    .buttons{
+        width: 100%;
+        display: inline-block;
+    }
+    button{
+        text-align: center;
+    }
+    textarea{
+        float: left;
+    }
+
+    video{
+        margin-top: 30px;
+    }
 }
