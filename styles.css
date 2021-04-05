@@ -114,9 +114,13 @@ button:hover{
 }
 /* Breakpoint for smaller screens - only good for 100px */
 @media all and (max-width: 1000px) and (min-width:820px) {
+    body{
+        overflow-x: hidden;
+    }
     .container{
         width: 100%;
     }
+   
     header{
         height: 200px;
     }
@@ -138,7 +142,6 @@ button:hover{
         margin-top: 30px;
         margin-bottom: 50px;
     }
-
     .contact-info img{
         width: 20px;
     }
@@ -160,7 +163,9 @@ button:hover{
 }
 /* Tablet design */
 @media all and (max-width: 820px) { 
-    
+    body{
+        overflow-x: hidden;
+    }
     .container{
         margin: auto;
         width: 100%;
@@ -570,7 +575,7 @@ footer p{
         font-size: 0.70em;
         margin-left: 10px;
     }
-  
+    
     .contact-info p{
         margin-top: 20px;
     }
