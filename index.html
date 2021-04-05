@@ -19,6 +19,7 @@
             <h1>Eric Nielsen </h1>
             <div class="contact-info">
             <p> <a href="https://www.google.ca/maps/place/Calgary,+AB/@51.0277202,-114.36801,10z/data=!3m1!4b1!4m5!3m4!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0446318!4d-114.0717316" target="_blank"><img src="images/location.png"> Calgary, AB </a></p>
+
             <p> <a href="https://en.wikipedia.org/wiki/Mobile_phone" target="_blank"> <img src="images/phone.png"> (403)-404-6160 </p> </a> 
             <p> <a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJZNHKKmsjCBNkHMcpkndPcLRHwWdVGpXzBdQCKXvTHHqGbStPZgHrlqgVlzdGLGcGPQ" target="_blank"> <img src="images/mail.png"> eniel662@mtroyal.ca </a>  </p>
             </div>
@@ -46,11 +47,13 @@
     <main>
         <div class="container">
             <article class="summary">
-                <div class="test test1">
-                    <img class="front-img" src="images/front-img.png" alt="Website designer" title="yup, that's me.">
+                <div class="logo-container">
+                    <div class="test test1">
+                        <img class="front-img" src="images/front-img.png" alt="Website designer" title="yup, that's me.">
+                    </div>
+                    <div class="test test2"></div>
+                    <div class="test test3"></div>
                 </div>
-                <div class="test test2"></div>
-                <div class="test test3"></div>
                 <h2 id="summary-header"> Summary </h2>
                 <hr>
                 <p class="summary-txt">
@@ -232,15 +235,15 @@
                 <h2> Contact Me </h2>
                 <hr>
                 <div>
-                    <label for="name"> Name<span class="star">*</span>: </label>
+                    <label class="f-one" for="name"> Name<span class="star">*</span>: </label>
                     <input id="name" name="name" type="text" maxlength="35" placeholder="Your full name..." required>
                 </div>
                 <div>
-                    <label for="email"> Email<span class="star">*</span>:  </label>
+                    <label class="f-one" for="email"> Email<span class="star">*</span>:  </label>
                     <input type="email" id="email" name="email" pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" placeholder="Your email address..." required>
                 </div>
                 <div>
-                    <label for="phone-number">
+                    <label class="f-two" for="phone-number">
                         Phone Number:
                     </label>
                     <input type="tel" id="phone-number" name="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="Your phone number...">
