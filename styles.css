@@ -8,7 +8,7 @@
 :root{
     --body-color-1: #00203fff; /*alternative 1: #00203fff  alternative 2: #0b1c51*/
     --body-color-2: #adefd1ff; /*alternative: #adefd1ff */
-    --education-header-color: rgb(19, 121, 75);
+    --education-header-color: #349D47;
     --main-bg-color: #24252a;
     --main-txt-color: #1C1018;
     --header-bg-color: #1f2833;
@@ -164,6 +164,7 @@ button:hover{
 /* Tablet design */
 @media all and (max-width: 820px) { 
     body{
+        width: 100%;
         overflow-x: hidden;
     }
     .container{
@@ -304,6 +305,7 @@ body{
    grid-template-rows: 200px auto 30%;
    background-color: var(--main-bg-color);
    font-family: var(--regular-text-font-family);
+   width: 100%;
 }
 
 header{
@@ -518,7 +520,8 @@ video{
 }
 
 .star{
-    color: red;
+    color: #A9282E;
+    font-weight: bold;
 }
 
 
