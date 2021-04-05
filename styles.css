@@ -331,6 +331,7 @@ main{
 
 video{
     width: 400px;
+    min-width: 100px;
 }
 video:first-child{
     margin-right: 20px;
